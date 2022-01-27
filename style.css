@@ -20,19 +20,34 @@
     .flex-content{
         justify-content: space-evenly;
     }
-    .flex-content-row{
+    .flex-content-between{
         justify-content: space-between;
     }
+    .flex-content-around{
+        justify-content:space-around;
+    }
+
 
     .text-center{
         text-align: center;
     }
-
+    .h1-alt{
+        font-size: 60px;
+        line-height: 68px;
+        letter-spacing: -0.18px;
+    }
+    .h3-alt{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31.2px;
+        letter-spacing: -1px;
+    }
     h4{
         font-size: 14px;
         font-weight: 600;
         line-height: 18.2px;
     }
+
 
 
     /* colors */
@@ -47,6 +62,58 @@
     }
     .drk-blu{
         color:rgba(0, 0, 51, 1);
+    }
+    .drk-blu-alt{
+        color:rgba(48, 54, 131, 1);
+    }
+
+    .sub-white{
+        background-color: #FFF7F3;
+    }
+    .sub-orange{
+        background-color: rgba(255, 222, 205, 1);
+    }
+    .sub-orange-clr{
+        color:rgba(255, 222, 205, 1);
+    }
+    .white-text{
+        color:#fff;
+    }
+    .drk-bg{
+        background-image: linear-gradient( 90deg,rgba(0, 0, 0, 1),rgba(0, 0, 51, 1),rgba(0, 0, 0, 0));
+        height: 780px;
+        /* opacity: .8; */
+    }
+
+
+    /* text font */
+    .sarabun-text{
+        font-family: 'Sarabun', sans-serif;
+    }
+    .ibm-text{
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .inter-text{
+        font-family: 'Inter', sans-serif;
+    }
+    .poppins-text{
+        font-family: 'Poopins',sans-serif;
+    }
+    
+    /* font-weight */
+    .f-700{
+        font-weight: 700;
+    }
+    .f-600{
+        font-weight: 600;
+    }
+    .f-400{
+        font-weight: 400;
+    }
+
+    /* font-size */
+    .fs-18{
+        font-size: 18px;
     }
 
 
@@ -65,12 +132,50 @@
         font-size: 22px;
         
     }
+    .secondary-btn{
+        background-image: linear-gradient( 90deg, rgba(253, 137, 112, 1),rgba(233, 90, 92, 1));
+        border:none;
+        border-radius:4px;
+        box-shadow: rgba(0, 0, 0, 0.25);
+        font-size: 20px;
+        line-height: 30px;
+        width:277px;
+        padding:10px;
+        /* opacity: 1; */
+        
+    }
+    .capitalize{
+        text-transform:capitalize;
+    }
 
 /* section based */
 
 .head_container{
-    background-image: url("/assests/bg1.webp");
+    /* background-image: url("/assests/bg1.webp"); */
     /* height: 100vh; */
+    position: relative;
+}
+.bg-img{
+    max-width: 100%;
+    height: auto;
+}
+.inside_head{
+
+    position: absolute;
+    top: 0;
+
+    padding:10px 70px;
+
+    
+}
+.inside_head div{
+    margin:30px 0px;
+}
+.mid-head{
+
+}
+.mid-head h2, .mid-head h1, .mid-head h3{
+    padding:10px 0px;
 }
 
 /* zigzig */
@@ -124,8 +229,9 @@
 /* rent */
 
 .rent-container{
-    /* margin:20px auto; */
-    padding:70px;
+
+    padding:30px;
+
 }
 .rent-head{
     font-family: 'Sarabun', sans-serif;
@@ -137,5 +243,111 @@
 
 }
 .rent-feat{
+    margin:10px 120px;
+}
+
+.feat-item {
+    padding: 20px 40px;
+}
+
+
+/* safety */
+
+.safety-response{
+    box-shadow: 0px 0px rgba(70, 83, 158, 0.2);
+    /* padding:50px; */
     
 }
+.safety{
+    /* border-right: 1px solid rgba(172, 168, 169, 1); */
+    padding: 20px;
+
+}
+
+
+/* ready */
+.lineup{
+    /* padding: 30px;
+    margin: 10px 120px; */
+    margin:20px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.lineup>img:nth-of-type(even){
+    /* margin: -10px; */
+}
+.ready-text{
+    margin:0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.ready-feat{
+    padding:  0px 30px;
+    margin: 25px 50px;
+}
+
+.ready-foot{
+    padding:40px;
+}
+
+
+/* footer */
+
+.footer-container,.rights-container{
+    padding:40px 100px;
+    
+}
+
+.left{
+    /* padding:50px 0px; */
+    flex: 1;
+    margin:20px 0px;
+
+}
+
+
+.right{
+    flex: 1 ;
+    margin:20px 0px;
+}
+
+.footertext{
+    font-size: 14px;
+    line-height: 18.5px;
+    letter-spacing: -0.18px;
+    font-weight: 400;
+    color: rgba(47, 47, 47, 1);
+}
+.addresstext{
+    font-size: 12px;
+    line-height: 18.5px;
+    letter-spacing: -0.18px;
+
+}
+.addres-subtext{
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.18px;
+}
+
+.social img:last-of-type{
+    padding:  0px 20px;
+}
+
+
+/* right based footer */
+
+.ul-ft{
+    margin:20px 0px;
+    
+}
+.ul-ft li{
+    padding:3px 0px;
+    list-style: none;
+    font-size: 12px;
+    letter-spacing: -0.18px;
+    line-height: 28px;
+}
+

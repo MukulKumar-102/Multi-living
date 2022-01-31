@@ -155,10 +155,11 @@
 /* section based */
 
 .head_container{
-    background-image: url("/assests/bg1.webp");
+    background: linear-gradient(90deg,rgba(0, 0, 51, 1),rgba(0, 0, 0, 0)), url("/assests/bg1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    height: 135vh;
 }
 /* .bg-img{
     max-width: 100%;
@@ -259,11 +260,12 @@
 }
 
 .feat-item {
-    padding: 20px 40px;
+    padding: 20px;
 }
 .feat-item p{
-    padding:10px 30px 10px 0px ;
+    padding: 15px 50px 15px 0px;
 }
+
 
 
 /* safety */
@@ -271,6 +273,8 @@
 .safety-response{
     box-shadow: 0px 0px 50px rgba(70, 83, 158, 0.2);
     padding: 50px 30px;
+    margin: 70px;
+    position: relative;
     
 }
 .safety-head{
@@ -325,33 +329,40 @@
     top: -1px;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
+    border-bottom-right-radius: 8px;
 }
 
 
 
 
 /* ready */
+.ready-container{
+    margin:50px;
+}
 .lineup{
     /* padding: 30px;
     margin: 10px 120px; */
     margin:20px;
-    padding: 10px;
+    padding: 5px;
     justify-content: space-evenly;
     align-items: center;
     
 }
-.lineup>img:nth-of-type(even){
-    /* margin: -10px; */
-}
+/* .lineup:nth-child(2){
+    padding: 20px -20px;
+} */
+/* .lineup-item:nth-child(){
+    margin:20px 5px;
+} */
 .ready-text{
-    margin:0px 10px;
+
+    margin: 0px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .ready-feat{
-    padding:  0px 30px;
-    margin: 25px 50px;
+    padding: 0px 30px;
+    margin: 25px 20px;
 }
 
 .ready-foot{
@@ -416,4 +427,11 @@
     letter-spacing: -0.18px;
     line-height: 28px;
 }
+
+
+
+/* Responsive   */
+
+
+
 
